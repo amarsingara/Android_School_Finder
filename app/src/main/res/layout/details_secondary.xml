@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SecondaryDetails">
+
+<!--    <ImageView-->
+<!--        android:id="@+id/photo"-->
+<!--        android:layout_width="190dp"-->
+<!--        android:layout_height="190dp"-->
+<!--        android:layout_gravity="center" />-->
+
+    <TextView
+        android:id="@+id/rank"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+<!--    <ListView-->
+<!--        android:id="@+id/list"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent" />-->
+
+    <TextView
+        android:id="@+id/schoolName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/enrollment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+<!--    <TextView-->
+<!--        android:id="@+id/unit"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:textSize="24sp"-->
+<!--        android:textStyle="bold" />-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/price"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:textSize="24sp"-->
+<!--        android:textStyle="bold" />-->
+
+</LinearLayout>
