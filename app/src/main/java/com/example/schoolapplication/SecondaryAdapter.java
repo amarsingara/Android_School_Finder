@@ -49,11 +49,21 @@ public class SecondaryAdapter extends BaseAdapter {
         tvSchoolName = vi.findViewById(R.id.tvSchoolName);
         someDistance = vi.findViewById(R.id.tvDist);
 
-        String full = String.format("%s", secondary.getSchoolName());
 
-        someDistance.setText(String.valueOf(secondary.getDistance()/1000) + "km");
+        String full = String.format("%s", secondary.getSchoolName().toLowerCase());
+
+        String[] arr = full.split(" ");
+        StringBuffer sb = new StringBuffer();
+
+        for (int i = 0; i < arr.length; i++) {
+            sb.append(Character.toUpperCase(arr[i].charAt(0)))
+                    .append(arr[i].substring(1)).append(" ");
+        }
+        String x = sb.toString().trim();
+
+        someDistance.setText(String.valueOf(secondary.getDistance()/1000) + " km");
         tvRank.setText(String.valueOf(secondary.getRank()));
-        tvSchoolName.setText(full);
+        tvSchoolName.setText(x);
 
 
 

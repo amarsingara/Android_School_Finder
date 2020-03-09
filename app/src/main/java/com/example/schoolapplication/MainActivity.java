@@ -167,11 +167,13 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
         double lon = add.getLongitude();
 
         float result[] = new float[11];
+       // ArrayList<Float> x = new ArrayList<>();
 
         for(int k = 0; k < 10; k++){
             Location.distanceBetween(lat, lon, mListData.get(k).getLat() , mListData.get(k).getLon(), result);
-            if(result[k] < 10000){
-                mListData.get(k).setDist_to(result[k]);
+            for(int j = 0; j < 11; j +=11){
+               // x.add(result[j]);
+                mListData.get(k).setDist_to(result[j]);
             }
 
         }

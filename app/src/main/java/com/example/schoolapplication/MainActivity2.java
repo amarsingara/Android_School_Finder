@@ -10,6 +10,7 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ListView;
 
+import com.google.android.gms.common.util.CollectionUtils;
 import com.google.gson.Gson;
 
 import java.io.IOException;
@@ -37,8 +38,9 @@ public class MainActivity2 extends AppCompatActivity{
 
         for(int k = 0; k < data.size(); k ++){
             for(int j = 0; j < secondaryList.size(); j++) {
-                if (data.get(k).getDist_to() > 0 && data.get(k).getPlaceType().contains(secondaryList.get(j).getSchoolName())) {
+                if (data.get(k).getPlaceType().contains(secondaryList.get(j).getSchoolName())){
                     secondaryList.get(j).setDistance(data.get(k).getDist_to());
+                    System.out.println(secondaryList.get(k).getDistance());
                 }
             }
 
