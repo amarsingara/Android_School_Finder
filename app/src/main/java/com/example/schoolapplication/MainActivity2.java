@@ -40,6 +40,8 @@ public class MainActivity2 extends AppCompatActivity{
             for(int j = 0; j < secondaryList.size(); j++) {
                 if (data.get(k).getPlaceType().contains(secondaryList.get(j).getSchoolName())){
                     secondaryList.get(j).setDistance(data.get(k).getDist_to());
+                    secondaryList.get(j).setLon(data.get(k).getLon());
+                    secondaryList.get(j).setLat(data.get(k).getLat());
                     System.out.println(secondaryList.get(k).getDistance());
                 }
             }

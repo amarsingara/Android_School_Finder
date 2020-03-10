@@ -38,6 +38,30 @@ public class Secondary implements Serializable {
     public float getDistance(){return distance;}
     public void setDistance(float enrollment) {this.distance = enrollment;}
 
+    @SerializedName("lat")
+    @Expose
+    private double lat;
+
+    public double getLat() {
+        return lat;
+    }
+
+    public void setLat(double name) {
+        lat = name;
+    }
+
+    @SerializedName("lon")
+    @Expose
+    private double lon;
+
+    public double getLon() {
+        return lon;
+    }
+
+    public void setLon(double name) {
+        lon = name;
+    }
+
 
 //    "BCRank": 167,
 //            "Rank": 7,
