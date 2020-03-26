@@ -1,47 +1,303 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:orientation="vertical"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:fillViewport="false">
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".SecondaryDetails">
+
+    android:stretchColumns="1">
 
 <!--    <ImageView-->
 <!--        android:id="@+id/photo"-->
 <!--        android:layout_width="190dp"-->
 <!--        android:layout_height="190dp"-->
 <!--        android:layout_gravity="center" />-->
-
+<TableRow>
     <TextView
-        android:id="@+id/rank"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textSize="24sp"
-        android:textStyle="bold" />
+
+        android:textSize="18sp"
+        android:text="Rank"
+        android:layout_marginLeft="20dp"
+        android:layout_marginBottom="20dp"
+
+
+        />
+    <TextView
+        android:id="@+id/rank"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+
+        android:layout_marginLeft="10dp"
+        android:textStyle="bold"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="20dp"/>
+</TableRow>
 
 <!--    <ListView-->
 <!--        android:id="@+id/list"-->
 <!--        android:layout_width="match_parent"-->
 <!--        android:layout_height="match_parent" />-->
-
+<TableRow>
     <TextView
-        android:id="@+id/schoolName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textSize="24sp"
-        android:textStyle="bold" />
+        android:textSize="18sp"
 
+        android:text="School Name"
+        android:layout_marginLeft="20dp"
+        android:layout_marginBottom="20dp"
+
+
+        />
+    <TextView
+        android:id="@+id/schoolName"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:layout_marginLeft="10dp"
+        android:textStyle="bold" />
+</TableRow>
+
+    <TableRow>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+
+            android:text="Enrollment"
+            android:layout_marginLeft="20dp"
+            android:layout_marginBottom="20dp"
+
+
+            />
     <TextView
         android:id="@+id/enrollment"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textSize="24sp"
+        android:textSize="18sp"
+        android:layout_marginLeft="10dp"
         android:textStyle="bold" />
+    </TableRow>
+
+    <TableRow>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+
+            android:text="Special Needs (%)"
+            android:layout_marginLeft="20dp"
+            android:layout_marginBottom="20dp"
+
+
+            />
+    <TextView
+        android:id="@+id/specialneeds"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:layout_marginLeft="10dp"
+
+        android:text="Yea"/>
+    </TableRow>
+    <TableRow>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+
+            android:text="ESL"
+            android:layout_marginLeft="20dp"
+            android:layout_marginBottom="20dp"
+
+
+            />
+    <TextView
+        android:id="@+id/esl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:layout_marginLeft="10dp"
+        android:text="fuck"/>
+    </TableRow>
+    <TableRow>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+
+            android:text="French (%)"
+            android:layout_marginLeft="20dp"
+            android:layout_marginBottom="20dp"
+
+
+            />
+    <TextView
+        android:id="@+id/french"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:layout_marginLeft="10dp"
+        android:text="fuck"/>
+    </TableRow>
+    <TableRow>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+
+            android:text="Data Year"
+            android:layout_marginLeft="20dp"
+            android:layout_marginBottom="20dp"
+
+
+            />
+    <TextView
+        android:id="@+id/year0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:layout_marginLeft="10dp"
+        android:text="fuck"/>
+    </TableRow>
+    <TableRow>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+
+            android:text="Average Exam Mark"
+            android:layout_marginLeft="20dp"
+            android:layout_marginBottom="20dp"
+
+
+            />
+    <TextView
+        android:id="@+id/avg_mark"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:layout_marginLeft="10dp"
+        android:text="fuck"/>
+    </TableRow>
+    <TableRow>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+
+            android:text="Percentage of exams failed"
+            android:layout_marginLeft="20dp"
+            android:layout_marginBottom="20dp"
+
+
+            />
+    <TextView
+        android:id="@+id/fail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:layout_marginLeft="10dp"
+        android:text="fuck"/>
+    </TableRow>
+    <TableRow>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+
+            android:text="School vs exam mark difference"
+            android:layout_marginLeft="20dp"
+            android:layout_marginBottom="20dp"
+
+
+            />
+
+    <TextView
+        android:id="@+id/diff"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:layout_marginLeft="10dp"
+        android:text="fuck"/>
+    </TableRow>
+    <TableRow>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+
+            android:text="Graduaton Rate (%)"
+            android:layout_marginLeft="20dp"
+            android:layout_marginBottom="20dp"
+
+
+            />
+
+    <TextView
+        android:id="@+id/grate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:layout_marginLeft="10dp"
+        android:text="fuck"/>
+    </TableRow>
+    <TableRow>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+
+            android:text="Delayed advancement rate (%)"
+            android:layout_marginLeft="20dp"
+            android:layout_marginBottom="20dp"
+
+
+            />
+    <TextView
+        android:id="@+id/arate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:layout_marginLeft="10dp"
+        android:text="fuck"/>
+    </TableRow>
+    <TableRow>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+
+            android:text="Overall rating out of 10"
+            android:layout_marginLeft="20dp"
+            android:layout_marginBottom="20dp"
+
+
+            />
+    <TextView
+        android:id="@+id/rating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:layout_marginLeft="10dp"
+        android:text="fuck"/>
+    </TableRow>
+
+
 
     <Button
         android:id="@+id/button2"
+        android:onClick="onClick"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:background="@drawable/button"
         android:text="View On Map" />
 
 
@@ -62,4 +318,5 @@
 
 
 
-</LinearLayout>
+</TableLayout>
+</ScrollView>

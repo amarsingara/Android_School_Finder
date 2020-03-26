@@ -1,48 +1,62 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:fillViewport="false">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity"
-    android:background="@drawable/background"
+    android:orientation="vertical"
+    android:layout_margin="20dp"
+
     android:alpha="1">
 
 
-    <ImageView
-        android:id="@+id/photo"
+
+
+    <com.mikhaellopez.circularimageview.CircularImageView
+        android:layout_width="match_parent"
+        android:layout_height="550dp"
+        android:scaleType="centerCrop"
+        android:layout_gravity="center"
         android:src="@drawable/logo"
-        android:layout_width="190dp"
-        android:layout_height="190dp"
-        android:alpha="0.4"
-        android:layout_marginBottom="200dp"
-        android:foregroundGravity="center"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:civ_border_color="@color/colorPrimary"
+        app:civ_border_width="6dp"
+
+        app:civ_shadow="true"
+        app:civ_shadow_color="#3f51b5"
+        app:civ_shadow_radius="10dp" />
 
     <EditText
         android:id="@+id/editText"
         android:layout_width="296dp"
+        android:layout_marginTop="10dp"
+        android:hint="Enter your location"
         android:layout_height="57dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="180dp"
+       android:layout_gravity="center"
+        android:background="@drawable/back"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/button"
+
+
+        android:background="@drawable/button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="180dp"
-        android:layout_marginEnd="16dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
         android:onClick="decode"
-        android:text="Button"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"/>
+        android:outlineSpotShadowColor="@color/colorAccent"
+        android:text="Find Schools"
+
+
+       />
 
     <TextView
         android:id="@+id/textView"
@@ -58,4 +72,6 @@
 
 
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+
+</LinearLayout>
+</ScrollView>

@@ -166,7 +166,7 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
         double lat = add.getLatitude();
         double lon = add.getLongitude();
 
-        float result[] = new float[11];
+        float[] result = new float[11];
        // ArrayList<Float> x = new ArrayList<>();
 
         for(int k = 0; k < 10; k++){

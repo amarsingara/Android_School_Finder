@@ -26,7 +26,7 @@ public class Secondary implements Serializable {
         this.schoolName = schoolName;
     }
 
-    @SerializedName("Gr 12 Enrollment")
+    @SerializedName("Gr_Enrollment")
     @Expose
     private int enrollment;
     public int getEnrollment(){return enrollment;}
@@ -61,6 +61,96 @@ public class Secondary implements Serializable {
     public void setLon(double name) {
         lon = name;
     }
+
+//    @SerializedName("Gr_Enrollment")
+//    @Expose
+//    private int gr12;
+//    public void setgr12(int some){gr12=some;}
+//    public int getGr12(){
+//        return gr12;
+//    }
+
+    @SerializedName("ESL")
+    @Expose
+    private float esl;
+    public void setesl(float some){esl=some;}
+    public float getesl(){
+        return esl;
+    }
+
+    @SerializedName("Special_needs")
+    @Expose
+    private float sneeds;
+    public void setsneeds(float some){sneeds=some;}
+    public float getsneeds(){
+        return sneeds;
+    }
+
+    @SerializedName("French Imm (%)")
+    @Expose
+    private float french;
+    public void setfrench(float some){french=some;}
+    public float getfrench(){
+        return french;
+    }
+
+    @SerializedName("Academic Performance")
+    @Expose
+    private String year;
+    public void setyear(String some){year=some;}
+    public String getyear(){
+        return year;
+    }
+
+    @SerializedName("Average exam mark")
+    @Expose
+    private String aver_mark;
+    public void setaver_mark(String some){aver_mark=some;}
+    public String getaver_mark(){
+        return aver_mark;
+    }
+
+    @SerializedName("Percentage of exams failed")
+    @Expose
+    private String fail;
+    public void setfail(String some){fail=some;}
+    public String getfail(){
+        return fail;
+    }
+
+    @SerializedName("School vs exam mark difference")
+    @Expose
+    private String diff;
+    public void setdiff(String some){diff=some;}
+    public String getDiff(){
+        return diff;
+    }
+
+    @SerializedName("Graduation rate")
+    @Expose
+    private String grate;
+    public void setgrate(String some){grate=some;}
+    public String getgrate(){
+        return grate;
+    }
+
+    @SerializedName("Delayed advancement rate")
+    @Expose
+    private String arate;
+    public void setarate(String some){arate=some;}
+    public String getarate(){
+        return arate;
+    }
+
+    @SerializedName("Overall rating out of 10")
+    @Expose
+    private String rating;
+    public void setrating(String some){rating=some;}
+    public String getrating(){
+        return rating;
+    }
+
+
 
 
 //    "BCRank": 167,

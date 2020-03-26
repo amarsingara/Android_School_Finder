@@ -57,6 +57,7 @@ public class MainActivity2 extends AppCompatActivity{
                 i.putExtra("index", (int)id);
                 i.putExtra("LIST", (Serializable) secondaryList);
                 startActivity(i);
+
             }
         });
     }

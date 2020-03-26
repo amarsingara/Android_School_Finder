@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
+
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="horizontal"
     android:layout_width="match_parent"
@@ -9,17 +10,20 @@
         android:layout_width="0dp"
         android:layout_height="match_parent"
         android:layout_weight=".1"
-        android:gravity="center"
+        android:gravity="start"
+        android:layout_marginLeft="30dp"
         android:textSize="15dp"
-        android:textColor="@color/colorAccent"/>
+        android:textColor="#ffffff"
+        />
 
     <TextView
         android:id="@+id/tvSchoolName"
         android:layout_width="0dp"
         android:layout_height="match_parent"
         android:layout_weight=".1"
-        android:gravity="center"
+        android:gravity="start"
         android:textSize="15dp"
+        android:width="100dp"
         android:textStyle="bold"/>
 
     <TextView
@@ -27,7 +31,7 @@
         android:layout_width="0dp"
         android:layout_height="match_parent"
         android:layout_weight=".1"
-        android:gravity="center"
+        android:gravity="end"
         android:textSize="15dp"
         android:textStyle="bold"/>
 
@@ -41,3 +45,4 @@
 <!--        android:textStyle="bold"/>-->
 
 </LinearLayout>
+
