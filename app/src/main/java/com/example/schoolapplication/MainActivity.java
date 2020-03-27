@@ -177,7 +177,7 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
             }
 
         }
-        Toast.makeText(this, "" + mListData.get(0).getDist_to()+ "km", Toast.LENGTH_LONG).show();
+//        Toast.makeText(this, "" + mListData.get(0).getDist_to()+ "km", Toast.LENGTH_LONG).show();
 
         Intent i = new Intent(MainActivity.this, MainActivity2.class);
         Bundle args = new Bundle();
