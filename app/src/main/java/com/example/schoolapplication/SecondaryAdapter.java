@@ -9,6 +9,7 @@ import android.widget.BaseAdapter;
 import android.widget.TextView;
 
 import java.io.Serializable;
+import java.text.DecimalFormat;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -61,7 +62,9 @@ public class SecondaryAdapter extends BaseAdapter {
         }
         String x = sb.toString().trim();
 
-        someDistance.setText(String.valueOf(secondary.getDistance()/1000) + " km");
+        DecimalFormat df = new DecimalFormat("###.##");
+        String y = df.format(secondary.getDistance()/1000);
+        someDistance.setText(String.valueOf(y) + " km");
         tvRank.setText(String.valueOf(secondary.getRank()));
         tvSchoolName.setText(x);
 
